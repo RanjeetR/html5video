@@ -1,12 +1,13 @@
 .ui-tabs .ui-tabs-panel {
-    height: 320px;
+    height: 340px;
 }
 #thumb{
     background: black;
-    width: 668px;
+    width:100%;
+    display: inline-block;
 }
 #tabs{
-width: 668px;
+width: 76%;
 }
 #tabs-1{
     background-color: black;
@@ -18,14 +19,31 @@ width: 668px;
     POSITION: ABSOLUTE;
 }
 #thumb span img{
-    width: 11%;
+    width: 10%;
     cursor: pointer;
+    border: 1px solid;
+    float: left;
 }
-#thumb span img:hover{
-    background-image: url("../images/play.png");
+.imgContainer {
+   float: left;
+    width: 20%;
 }
+.row1 , .row2 {
+    margin-left: 21%;
+
+}
+.imgContainer img {
+    width: 20%;
+    border: 1px solid;
+    display: inline-grid;
+    height: 106px;
+    position: absolute;
+}
+/*#thumb span img:hover{*/
+    /*background-image: url("../images/play.png");*/
+/*}*/
 #thumb span{
-    margin-left: 5px;
+    /*margin-left: 5px;*/
 }
 .vjs-big-play-button{
     margin-left: 42%;
@@ -33,18 +51,24 @@ width: 668px;
 }
 .example_video_1-dimensions{
     height: 338px !important;
+    width: 100%;
 }
 
 body{
     font-family: "Trebuchet MS", sans-serif;
     margin: 50px;
 }
+video {
+    width: 100%    !important;
+    height: auto   !important;
+}
 .demoHeaders {
     margin-top: 2em;
 }
 .active{
-    border: 1px solid #0df1db;
+    border: 1px solid #0df1db !important;
     transform: scale(1.1);
+    opacity: 0.7;
 }
 #dialog-link {
     padding: .4em 1em .4em 20px;
@@ -79,4 +103,7 @@ body{
 }
 select {
     width: 200px;
+}
+.ui-tabs .ui-tabs-panel {
+    padding: 10px 4px 5px 6px;
 }
